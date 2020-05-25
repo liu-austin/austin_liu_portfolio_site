@@ -4,51 +4,49 @@ import React from 'react'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond"></span>
+      <span className="icon" style={{fontSize: '40px', textDecoration: 'underline', color: 'teal'}}><strong>A L</strong></span>
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Austin Liu</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
+          Software Engineer Specializing In Creating Performant Web Applications.
           <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          Focused on Developing Efficient & Scalable Solutions.
         </p>
       </div>
     </div>
     <nav>
-      <ul>
-        <li>
-          <button
+      <ul >
+        <li >
+          <button style={{margin: '0 auto'}}
             onClick={() => {
               props.onOpenArticle('intro')
-            }}
-          >
-            Intro
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Work
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('about')
             }}
           >
             About
           </button>
         </li>
         <li>
-          <button
+          <button style={{margin: '0 auto'}}
+            onClick={() => {
+              props.onOpenArticle('resume')
+            }}
+          >
+            Resume
+          </button>
+        </li>
+        <li>
+          <button style={{margin: '0 auto'}}
+            onClick={() => {
+              props.onOpenArticle('projects')
+            }}
+          >
+            Projects
+          </button>
+        </li>
+        <li>
+          <button style={{margin: '0 auto'}}
             onClick={() => {
               props.onOpenArticle('contact')
             }}

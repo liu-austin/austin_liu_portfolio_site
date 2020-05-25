@@ -1,10 +1,17 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import profilepic from '../images/profilepic.jpg'
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      sendername: '',
+      senderemail: '',
+      msg: ''
+    };
+  }
+
   render() {
     let close = (
       <div
@@ -28,82 +35,94 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
-          <span className="image main">
-            <img src={pic01} alt="" />
-          </span>
-          <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
+          <h2 className="major">About</h2>
+          <div className="image main" style={{backgroundImage: 'url("https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/tokyo.jpg")'}}>
+            <img style={{margin: '0 auto', width: '22.5%', borderRadius: '50%', border: '2.5px solid orange'}} src={profilepic} alt="" />
+          </div>
+          <div style={{verticalAlign: 'top'}}>
+            <h3 style={{textAlign: 'center'}}>What I would like to do</h3>
+            <p>My goal as a developer is to build applications that help customers attain their end goals & provide tremendous value for organizations.</p>
+          </div>
+          <div style={{verticalAlign: 'top'}}>
+            <h3 style={{textAlign: 'center'}}>What I am currently doing</h3>
+            <p>I'm a software engineer currently working in Los Angeles, CA. In my free time, I learn new programming skills and more about tech in general.</p>
+          </div>
+          <div style={{verticalAlign: 'top'}}>
+          <h3 style={{textAlign: 'center'}}>Interests when I am not coding</h3>
+          <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '17px'}}><div style={{textAlign: 'center', color: 'orange'}} className="icon fa-microchip fa-2x"></div>IOT/ Automation</p>
+            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '17px'}}><div style={{textAlign: 'center', color: 'orange'}} className="icon fa-map-signs fa-2x"></div>Hiking/ Outdoors</p>
+            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '17px'}}><div style={{textAlign: 'center', color: 'orange'}} className="icon fa-plane fa-2x"></div>Travel/ Exploration</p>
+          </div>
+            </div>
           {close}
         </article>
 
         <article
           id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          className={`${this.props.article === 'resume' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
-          <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+          <h2 className="major">Resume</h2>
+            <iframe width="100%" height="500px" src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/Austin_Liu_resume.pdf#view=FitH"}></iframe>
           {close}
         </article>
 
         <article
           id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
+          className={`${this.props.article === 'projects' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
-          <span className="image main">
-            <img src={pic03} alt="" />
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
+          <h2 className="major">Projects</h2>
+          <div style={{border: '1px solid white', padding: '15px'}}>
+            <h3 style={{textAlign: 'left'}}>TourViewAR</h3>
+              <div style={{textAlign: 'left'}}><img style={{width: '100%'}} src={"https://media.giphy.com/media/hr9MhRBXq0W9erfibl/giphy.gif"}/></div>
+              <h5 style={{fontWeight: 400}}>Cross-platform mobile app with camera & AR integrations</h5>
+              <h5 style={{fontWeight: 400}}>Tech Stack: React Native, ViroReact, Redux, Node.js, Express, PostgreSQL, AWS</h5>
+              <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+
+              <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/TourViewAR.ipa" className="download icon fa-apple fa-2x"></a><div style={{display: 'block'}}>IOS (.ipa)</div></h5>
+              <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/TourViewAR.apk" className="download icon fa-android fa-2x"></a><div style={{display: 'block'}}>Android (.apk)</div></h5>
+              <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://github.com/liu-austin/TourViewAR_client" className="download icon fa-github fa-2x"></a><div style={{display: 'block'}}>Front-end</div></h5>
+              <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://github.com/liu-austin/TourViewAR_server" className="download icon fa-github fa-2x"></a><div style={{display: 'block'}}>Back-end</div></h5>
+            </div>
+          </div>
+
+          <div style={{border: '1px solid white', padding: '15px'}}>
+            <h3 style={{textAlign: 'left'}}>Fortress Panic</h3>
+              <div style={{textAlign: 'left'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/image3.png"}/></div>
+              <h5 style={{fontWeight: 400}}>Multiplayer tower-defense game based on popular board game Castle Panic!</h5>
+              <h5 style={{fontWeight: 400}}>Tech Stack: React, Redux, Scss, Node.js, Express, Socket.io, MongoDB, Firebase, AWS</h5>
+              <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+                <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="http://d3ths4xs9zlotl.cloudfront.net/" className="download icon fa-link fa-2x"></a><div style={{display: 'block'}}>Live</div></h5>
+                <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://github.com/liu-austin/Fortress-Panic" className="download icon fa-github fa-2x"></a><div style={{display: 'block'}}>Github</div></h5>
+              </div>
+            </div>
+
+            <div style={{border: '1px solid white', padding: '15px'}}>
+            <h3 style={{textAlign: 'left'}}>A Way Home</h3>
+              <div style={{textAlign: 'left'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/fec1.png"}/></div>
+              <h5 style={{fontWeight: 400}}>Recreates VRBO's search and bookings microservice in UI design and functionality</h5>
+              <h5 style={{fontWeight: 400}}>Tech Stack: React, Redux, Sass, Node.js, Express, MySQL, Sequelize, Heroku, AWS</h5>
+              <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+                <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://awayhome-al-proxy-fec.herokuapp.com/" className="download icon fa-link fa-2x"></a><div style={{display: 'block'}}>Live</div></h5>
+                <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://github.com/hrla33-falcons/search-bar-booking-tool" className="download icon fa-github fa-2x"></a><div style={{display: 'block'}}>Github</div></h5>
+              </div>
+            </div>
+
+            <div style={{border: '1px solid white', padding: '15px'}}>
+            <h3 style={{textAlign: 'left'}}>Systems Design Capstone</h3>
+              <div style={{textAlign: 'left'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/sdc.png"}/></div>
+              <h5 style={{fontWeight: 400}}>Back-end optimization of IKEA products microservice for horizontal scaling</h5>
+              <h5 style={{fontWeight: 400}}>Tech Stack: Node.js, Express, PostgreSQL, Redis, AWS, NginX, Next.js</h5>
+              <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+                <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://github.com/hrla33-falcons/al-service-sdc" className="download icon fa-github fa-2x"></a><div style={{display: 'block'}}>Github</div></h5>
+              </div>
+            </div>
           {close}
         </article>
 
@@ -115,53 +134,66 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" action="mailto:austinliu279@gmail.com">
             <div className="field half first">
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <input value={this.state.sendername} onChange={(e) => this.setState({sendername: e.target.value})} type="text" name="name" id="name" />
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input value={this.state.senderemail} onChange={(e) => this.setState({senderemail: e.target.value})} type="text" name="email" id="email" />
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
+              <textarea value={this.state.msg} name="message" id="message" rows="4" onChange={(e) => this.setState({msg: e.target.value})}></textarea>
             </div>
             <ul className="actions">
               <li>
-                <input type="submit" value="Send Message" className="special" />
+                <input onClick={(e) => {
+                  e.preventDefault();
+                  window.open('mailto:austinliu279@gmail.com?subject=Message from ' + this.state.sendername + ' (' + this.state.senderemail + ') ' + ' ' + '&body=' + this.state.msg);
+               }} type="submit" value="Send Message" className="special" />
               </li>
               <li>
-                <input type="reset" value="Reset" />
+                <input onClick={() => {
+                  this.setState({sendername: '', senderemail: '', msg: ''})
+                }}type="reset" value="Reset" />
               </li>
             </ul>
           </form>
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
+                href="mailto:austinliu279@gmail.com"
+                className="icon fa-envelope"
               >
-                <span className="label">Twitter</span>
+                <span className="label">Email</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
+              <a href="https://www.linkedin.com/in/austin-liu-a9788824/" className="icon fa-linkedin">
+                <span className="label">LinkedIn</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
+              <a href="https://angel.co/u/austin-liu-4" className="icon fa-angellist">
+                <span className="label">AngelList</span>
               </a>
             </li>
             <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
+                href="https://github.com/liu-austin"
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://zoom.us/j/6827856470"
+                className="icon fa-video-camera"
+              >
+                <span className="label">Zoom</span>
               </a>
             </li>
           </ul>

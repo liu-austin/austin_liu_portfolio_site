@@ -15,3 +15,11 @@
 			display: none;
 		}
 	}
+
+	.download {
+		color: teal;
+		cursor: pointer;
+		&:hover {
+			color: #08ffc8;
+		}
+	}
