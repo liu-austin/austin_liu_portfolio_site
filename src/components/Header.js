@@ -4,7 +4,7 @@ import React from 'react'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon" style={{fontSize: '40px', textDecoration: 'underline', color: 'teal'}}><strong>A L</strong></span>
+      <span className="icon" style={{fontSize: '2em', textDecoration: 'underline', color: 'teal'}}><strong>A L</strong></span>
     </div>
     <div className="content">
       <div className="inner">
