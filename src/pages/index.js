@@ -22,6 +22,10 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount () {
+    let favicon = document.createElement("link");
+    favicon.rel="icon";
+    favicon.href="favicon.ico";
+    document.head.appendChild(favicon);
     this.timeoutId = setTimeout(() => {
         this.setState({loading: ''});
     }, 100);

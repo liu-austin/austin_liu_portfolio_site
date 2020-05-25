@@ -1,12 +1,13 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "austin_liu_portfolio_site",
+  "description": "Austin Liu Portfolio Site",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Austin Liu",
   "dependencies": {
     "gatsby": "^2.19.5",
     "gatsby-plugin-manifest": "^2.2.38",
     "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-s3": "^0.3.3",
     "gatsby-plugin-sass": "^2.1.27",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
@@ -21,7 +22,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby-plugin-s3 deploy"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

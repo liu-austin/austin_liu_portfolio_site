@@ -18,6 +18,12 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "austin-liu-portfolio",
+      },
+  },
     'gatsby-plugin-sass',
   ],
 }

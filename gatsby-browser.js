@@ -5,3 +5,6 @@
  */
 
 // You can delete this file if you're not using it
+// exports.onInitialClientRender = () => {
+//     console.log("ReactDOM.render has executed")
+//   }
