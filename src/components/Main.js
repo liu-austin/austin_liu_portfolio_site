@@ -50,9 +50,9 @@ class Main extends React.Component {
           <div style={{verticalAlign: 'top'}}>
           <h3 style={{textAlign: 'center'}}>Interests when I am not coding</h3>
           <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
-            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '17px'}}><div style={{textAlign: 'center', color: 'orange'}} className="icon fa-microchip fa-2x"></div>IOT/ Automation</p>
-            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '17px'}}><div style={{textAlign: 'center', color: 'orange'}} className="icon fa-map-signs fa-2x"></div>Hiking/ Outdoors</p>
-            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '17px'}}><div style={{textAlign: 'center', color: 'orange'}} className="icon fa-plane fa-2x"></div>Travel/ Exploration</p>
+            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: 'orange'}} className="icon fa-microchip fa-2x"></div>IOT/ Automation</p>
+            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: 'orange'}} className="icon fa-map-signs fa-2x"></div>Hiking/ Outdoors</p>
+            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: 'orange'}} className="icon fa-plane fa-2x"></div>Travel/ Exploration</p>
           </div>
             </div>
           {close}
