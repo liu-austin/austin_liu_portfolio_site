@@ -33,7 +33,7 @@ const Header = props => (
               props.onOpenArticle('resume')
             }}
           >
-            Resume
+            Resume &nbsp;
           </button>
         </li>
         <li>
