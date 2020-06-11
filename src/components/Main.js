@@ -115,7 +115,7 @@ class Main extends React.Component {
             </div>
 
             <div style={{border: '1px solid white', padding: '15px'}}>
-            <h3 style={{textAlign: 'left'}}>Systems Design Capstone</h3>
+            <h3 style={{textAlign: 'left'}}>Distributed Systems Design</h3>
               <div style={{textAlign: 'left'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/sdc.png"}/></div>
               <h5 style={{fontWeight: 400}}>Back-end optimization of IKEA products microservice for horizontal scaling</h5>
               <h5 style={{fontWeight: 400}}>Tech Stack: Node.js, Express, PostgreSQL, Redis, AWS, NginX, Next.js</h5>
