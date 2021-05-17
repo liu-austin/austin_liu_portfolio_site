@@ -4,15 +4,16 @@ import React from 'react'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon" style={{fontSize: '2em', textDecoration: 'underline', color: 'teal'}}><strong>A L</strong></span>
+      <span className="icon" style={{fontSize: '2em', textDecoration: 'underline', color: '#64ffda'}}><strong>A L</strong></span>
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Austin Liu</h1>
+        <h1 className={`title-header`}>Austin Liu</h1>
+        <h3 className={`subtitle-header`} style={{color: '#a8b2d1'}}>
+          Full Stack Software Engineer
+        </h3>
         <p>
-          Software Engineer Specializing In Creating Performant Web Applications.
-          <br />
-          Focused on Developing Efficient & Scalable Solutions.
+        Experienced In Developing Performant Web Applications.
         </p>
       </div>
     </div>

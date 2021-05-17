@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import profilepic from '../images/profilepic.jpg'
+import profilepic from '../images/profilepic.jpg';
 
 class Main extends React.Component {
   constructor(props) {
@@ -37,22 +37,22 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <div className="image main" style={{backgroundImage: 'url("https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/tokyo.jpg")'}}>
-            <img style={{margin: '0 auto', width: '22.5%', borderRadius: '50%', border: '2.5px solid orange'}} src={profilepic} alt="" />
+            <img style={{margin: '0 auto', width: '22.5%', borderRadius: '50%', border: '2.5px solid #64ffda'}} src={profilepic} alt="" />
           </div>
           <div style={{verticalAlign: 'top'}}>
             <h3 style={{textAlign: 'center'}}>What I would like to do</h3>
-            <p>My goal as a developer is to build applications that help customers attain their end goals & provide tremendous value for organizations.</p>
+            <p>My goal as a developer is to build applications that help solve tough problems & provide tremendous value for a wide audience.</p>
           </div>
           <div style={{verticalAlign: 'top'}}>
             <h3 style={{textAlign: 'center'}}>What I am currently doing</h3>
-            <p>I'm a software engineer currently working in Los Angeles, CA. In my free time, I learn new programming skills and more about tech in general.</p>
+            <p>I'm a software engineer based in Los Angeles, CA. I am usually busy expanding my tech skills and working on new projects in my free time.</p>
           </div>
           <div style={{verticalAlign: 'top'}}>
           <h3 style={{textAlign: 'center'}}>Interests when I am not coding</h3>
           <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
-            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: 'orange'}} className="icon fa-microchip fa-2x"></div>IOT/ Automation</p>
-            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: 'orange'}} className="icon fa-map-signs fa-2x"></div>Hiking/ Outdoors</p>
-            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: 'orange'}} className="icon fa-plane fa-2x"></div>Travel/ Exploration</p>
+            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: '#64ffda'}} className="icon fa-microchip fa-2x"></div>IOT/ Automation</p>
+            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: '#64ffda'}} className="icon fa-map-signs fa-2x"></div>Hiking/ Outdoors</p>
+            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: '#64ffda'}} className="icon fa-plane fa-2x"></div>Travel/ Exploration</p>
           </div>
             </div>
           {close}
@@ -78,49 +78,57 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Projects</h2>
-          <div style={{border: '1px solid white', padding: '15px'}}>
+          <div style={{border: '1px solid #3d84b8', padding: '15px'}}>
             <h3 style={{textAlign: 'left'}}>TourViewAR</h3>
-              <div style={{textAlign: 'left'}}><img style={{width: '100%'}} src={"https://media.giphy.com/media/hr9MhRBXq0W9erfibl/giphy.gif"}/></div>
-              <h5 style={{fontWeight: 400}}>Cross-platform mobile app with camera & AR integrations</h5>
-              <h5 style={{fontWeight: 400}}>Tech Stack: React Native, ViroReact, Redux, Node.js, Express, PostgreSQL, AWS</h5>
-              <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+              <div style={{textAlign: 'left', marginBottom: '5px'}}><img style={{width: '100%'}} src={"https://media.giphy.com/media/hr9MhRBXq0W9erfibl/giphy.gif"}/></div>
+              <div style={{backgroundColor: 'rgba(45, 63, 104, 0.25)', padding: '5px 10px 0px 10px', borderRadius: '5px'}}>
+              <h5 style={{fontWeight: 400, marginTop: '10px'}}>Cross-platform mobile app with camera & AR integrations</h5>
+              <h5 style={{fontWeight: 400 }}>Tech Stack: React Native, ViroReact, Redux, Node.js, Express, PostgreSQL, AWS</h5>
+              <div style={{display: 'flex', justifyContent: 'space-evenly', color: '#a8b2d1' }}>
 
               <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/TourViewAR.ipa" className="download icon fa-apple fa-2x"></a><div style={{display: 'block'}}>IOS (.ipa)</div></h5>
               <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/TourViewAR.apk" className="download icon fa-android fa-2x"></a><div style={{display: 'block'}}>Android (.apk)</div></h5>
               <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://github.com/liu-austin/TourViewAR_client" className="download icon fa-github fa-2x"></a><div style={{display: 'block'}}>Front-end</div></h5>
               <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://github.com/liu-austin/TourViewAR_server" className="download icon fa-github fa-2x"></a><div style={{display: 'block'}}>Back-end</div></h5>
             </div>
+            </div>
           </div>
 
-          <div style={{border: '1px solid white', padding: '15px'}}>
+          <div style={{border: '1px solid #3d84b8', padding: '15px'}}>
             <h3 style={{textAlign: 'left'}}>Fortress Panic</h3>
-              <div style={{textAlign: 'left'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/image3.png"}/></div>
-              <h5 style={{fontWeight: 400}}>Multiplayer tower-defense game based on popular board game Castle Panic!</h5>
-              <h5 style={{fontWeight: 400}}>Tech Stack: React, Redux, Scss, Node.js, Express, Socket.io, MongoDB, Firebase, AWS</h5>
-              <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+              <div style={{textAlign: 'left', marginBottom: '5px'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/image3.png"}/></div>
+              <div style={{backgroundColor: 'rgba(45, 63, 104, 0.25)', padding: '5px 10px 0px 10px', borderRadius: '5px'}}>
+              <h5 style={{fontWeight: 400,  marginTop: '10px'}}>Multiplayer tower-defense game based on popular board game Castle Panic!</h5>
+              <h5 style={{fontWeight: 400 }}>Tech Stack: React, Redux, Scss, Node.js, Express, Socket.io, MongoDB, Firebase, AWS</h5>
+              <div style={{display: 'flex', justifyContent: 'space-evenly', color: '#a8b2d1' }}>
                 <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="http://d3ths4xs9zlotl.cloudfront.net/" className="download icon fa-link fa-2x"></a><div style={{display: 'block'}}>Live</div></h5>
                 <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://github.com/liu-austin/Fortress-Panic" className="download icon fa-github fa-2x"></a><div style={{display: 'block'}}>Github</div></h5>
               </div>
-            </div>
-
-            <div style={{border: '1px solid white', padding: '15px'}}>
-            <h3 style={{textAlign: 'left'}}>A Way Home</h3>
-              <div style={{textAlign: 'left'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/fec1.png"}/></div>
-              <h5 style={{fontWeight: 400}}>Recreates VRBO's search and bookings microservice in UI design and functionality</h5>
-              <h5 style={{fontWeight: 400}}>Tech Stack: React, Redux, Sass, Node.js, Express, MySQL, Sequelize, Heroku, AWS</h5>
-              <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
-                <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://awayhome-al-proxy-fec.herokuapp.com/" className="download icon fa-link fa-2x"></a><div style={{display: 'block'}}>Live</div></h5>
-                <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://github.com/hrla33-falcons/search-bar-booking-tool" className="download icon fa-github fa-2x"></a><div style={{display: 'block'}}>Github</div></h5>
               </div>
             </div>
 
-            <div style={{border: '1px solid white', padding: '15px'}}>
+            <div style={{border: '1px solid #3d84b8', padding: '15px'}}>
+            <h3 style={{textAlign: 'left'}}>A Way Home</h3>
+              <div style={{textAlign: 'left', marginBottom: '5px'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/fec1.png"}/></div>
+              <div style={{backgroundColor: 'rgba(45, 63, 104, 0.25)', padding: '5px 10px 0px 10px', borderRadius: '5px'}}>
+              <h5 style={{fontWeight: 400, marginTop: '10px'}}>Recreates VRBO's search and bookings microservice in UI design and functionality</h5>
+              <h5 style={{fontWeight: 400 }}>Tech Stack: React, Redux, Sass, Node.js, Express, MySQL, Sequelize, Heroku, AWS</h5>
+              <div style={{display: 'flex', justifyContent: 'space-evenly', color: '#a8b2d1' }}>
+                <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://awayhome-al-proxy-fec.herokuapp.com/" className="download icon fa-link fa-2x"></a><div style={{display: 'block'}}>Live</div></h5>
+                <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px', color: '#a8b2d1' }}><a style={{textAlign: 'center'}} href="https://github.com/hrla33-falcons/search-bar-booking-tool" className="download icon fa-github fa-2x"></a><div style={{display: 'block'}}>Github</div></h5>
+              </div>
+              </div>
+            </div>
+
+            <div style={{border: '1px solid #3d84b8', padding: '15px'}}>
             <h3 style={{textAlign: 'left'}}>Distributed Systems Design</h3>
-              <div style={{textAlign: 'left'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/sdc.png"}/></div>
-              <h5 style={{fontWeight: 400}}>Back-end optimization of IKEA products microservice for horizontal scaling</h5>
-              <h5 style={{fontWeight: 400}}>Tech Stack: Node.js, Express, PostgreSQL, Redis, AWS, NginX, Next.js</h5>
-              <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
-                <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://github.com/hrla33-falcons/al-service-sdc" className="download icon fa-github fa-2x"></a><div style={{display: 'block'}}>Github</div></h5>
+              <div style={{textAlign: 'left', marginBottom: '5px'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/sdc.png"}/></div>
+              <div style={{backgroundColor: 'rgba(45, 63, 104, 0.25)', padding: '5px 10px 0px 10px', borderRadius: '5px'}}>
+              <h5 style={{fontWeight: 400, marginTop: '10px'}}>Back-end optimization of IKEA products microservice for horizontal scaling</h5>
+              <h5 style={{fontWeight: 400 }}>Tech Stack: Node.js, Express, PostgreSQL, Redis, AWS, NginX, Next.js</h5>
+              <div style={{display: 'flex', justifyContent: 'space-evenly', color: '#a8b2d1' }}>
+                <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px' }}><a style={{textAlign: 'center'}} href="https://github.com/hrla33-falcons/al-service-sdc" className="download icon fa-github fa-2x"></a><div style={{display: 'block'}}>Github</div></h5>
+              </div>
               </div>
             </div>
           {close}
@@ -171,7 +179,7 @@ class Main extends React.Component {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/austin-liu-a9788824/" className="icon fa-linkedin">
+              <a href="https://www.linkedin.com/in/austin-liu1/" className="icon fa-linkedin">
                 <span className="label">LinkedIn</span>
               </a>
             </li>
