@@ -45,8 +45,8 @@ class Main extends React.Component {
             Welcome! I'm Austin Liu, a software engineer currently working in Los Angeles, CA. 
             My goal as a developer is to build software that provides productivity + simplicity and compound the benefits scaling over time.
             <br/><br/>
-            I enjoy the process of developing full stack solutions to web products throughout the whole development lifecycle, from creating engaging user interfaces to scaling robust backends. 
-            I enjoy the community and the challenges that the field brings as well as the opportunity to solve problems. I look forward to challenging myself on a daily basis and am excited to work alongside brilliant team members.
+            I enjoy the process of developing robust solutions to web products throughout the whole development lifecycle, from creating engaging user interfaces to scaling performant backends. 
+            I am capable of taking charge of projects and leading them to success and am an advocate for pragmatic coding practices and innovative technology.
             <br/><br/>
             Thanks for visiting!
             </p>
