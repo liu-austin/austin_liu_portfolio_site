@@ -41,6 +41,7 @@ class Main extends React.Component {
           </div>
           <div style={{verticalAlign: 'top'}}>
             <h3 style={{textTransform: 'none', textAlign: 'left'}}>Mission-driven full stack developer with a passion for building high-quality software</h3>
+            <div style={{backgroundColor: 'rgba(45, 63, 104, 0.25)', padding: '30px 17.5px 0px 17.5px', borderRadius: '5px'}}>
             <p>
             Welcome! I'm Austin Liu, a software engineer currently working in Los Angeles, CA. 
             My goal as a developer is to build software that provides productivity + simplicity and compound the benefits scaling over time.
@@ -49,7 +50,9 @@ class Main extends React.Component {
             I am capable of taking charge of projects and leading them to success and am an advocate for pragmatic coding practices and innovative technology.
             <br/><br/>
             Thanks for visiting!
+            <br/><br/>
             </p>
+            </div>
           </div>
           {close}
         </article>
