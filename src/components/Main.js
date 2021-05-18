@@ -41,14 +41,17 @@ class Main extends React.Component {
           </div>
           <div style={{verticalAlign: 'top'}}>
             <h3 style={{textAlign: 'center'}}>What I would like to do</h3>
-            <p>My goal as a developer is to build applications that help solve tough problems & provide tremendous value for a wide audience.</p>
+            <p>
+            My goal as a developer is to contribute to high-quality applications that provide productivity + simplicity and compound the scale of its benefits over time.
+            </p>
           </div>
           <div style={{verticalAlign: 'top'}}>
             <h3 style={{textAlign: 'center'}}>What I am currently doing</h3>
-            <p>I'm a software engineer based in Los Angeles, CA. I am usually busy expanding my tech skills and working on new projects in my free time.</p>
+            <p>I'm a software engineer currently working in Los Angeles, CA, focused on building web development. In my free time, I leverage my tech skills to build new systems and tools.
+            </p>
           </div>
           <div style={{verticalAlign: 'top'}}>
-          <h3 style={{textAlign: 'center'}}>Interests when I am not coding</h3>
+          <h3 style={{textAlign: 'center'}}>Interests when I'm not coding for work or fun</h3>
           <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
             <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: '#64ffda'}} className="icon fa-microchip fa-2x"></div>IOT/ Automation</p>
             <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: '#64ffda'}} className="icon fa-map-signs fa-2x"></div>Hiking/ Outdoors</p>
