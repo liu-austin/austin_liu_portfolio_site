@@ -40,10 +40,10 @@ class Main extends React.Component {
             <img style={{margin: '0 auto', width: '22.5%', borderRadius: '50%', border: '2.5px solid #64ffda'}} src={profilepic} alt="" />
           </div>
           <div style={{verticalAlign: 'top'}}>
-            <h3 style={{textAlign: 'left'}}>A Problem-solving Full Stack Developer</h3>
+            <h3 style={{textTransform: 'none', textAlign: 'left'}}>Mission-driven full stack developer with a passion for building high-quality software</h3>
             <p>
             Hi there! I'm Austin Liu, a software engineer currently working in Los Angeles, CA. 
-            My purpose as a developer is to build software that provides productivity and simplicity and compound the value benefits over time.
+            My goal as a developer is to build software that provides productivity and simplicity and compound the value benefits over time.
             <br/><br/>
             I enjoy the process of developing full stack solutions to web products throughout the whole development lifecycle, from creating engaging user interfaces to scaling robust backends. 
             I enjoy the community and the challenges that the field brings as well as the opportunity to solve problems. I look forward to challenging myself on a daily basis and am excited to work alongside brilliant team members.
