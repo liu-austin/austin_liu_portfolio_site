@@ -97,6 +97,21 @@ class IndexPage extends React.Component {
     return (
       <Layout location={this.props.location}>
       <link rel="preload" as="image" href="https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/tokyo.jpg" />
+      <link rel="preload" as="image" href="https://media.giphy.com/media/hr9MhRBXq0W9erfibl/giphy.gif" />
+      <link rel="preload" as="image" href="https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/image3.png" />
+      <link rel="preload" as="image" href="https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/fec1.png" />
+      <link rel="preload" as="image" href="https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/sdc.png" />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        charset="UTF-8"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+      />
         <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
           <div id="wrapper">
             <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />

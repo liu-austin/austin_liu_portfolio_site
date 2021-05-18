@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import profilepic from '../images/profilepic.jpg';
+import Slider from "react-slick";
 
 class Main extends React.Component {
   constructor(props) {
@@ -22,6 +23,22 @@ class Main extends React.Component {
       ></div>
     )
 
+    const config = {
+      "0": "https://media.giphy.com/media/hr9MhRBXq0W9erfibl/giphy.gif",
+      "1": "https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/image3.png",
+      "2": "https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/fec1.png",
+      "3": "https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/sdc.png",
+    }
+
+    const settings = {
+      // dots: true,
+      // infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      vertical: true,
+      verticalSwiping: true,
+    };
+
     return (
       <div
         ref={this.props.setWrapperRef}
@@ -37,7 +54,7 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <div className="image main" style={{backgroundImage: 'url("https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/tokyo.jpg")'}}>
-            <img style={{margin: '0 auto', width: '22.5%', borderRadius: '50%', border: '2.5px solid #64ffda'}} src={profilepic} alt="" />
+            <img style={{margin: '0 auto', width: '22.5%', borderRadius: '50%', border: '2.5px solid #64ffda'}} src={profilepic} alt="profilepic" />
           </div>
           <div style={{verticalAlign: 'top'}}>
             <h3 style={{textAlign: 'center'}}>What I would like to do</h3>
@@ -81,9 +98,11 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Projects</h2>
+          <Slider {...settings}>
           <div style={{border: '1px solid #3d84b8', padding: '15px'}}>
             <h3 style={{textAlign: 'left'}}>TourViewAR</h3>
               <div style={{textAlign: 'left', marginBottom: '5px'}}><img style={{width: '100%'}} src={"https://media.giphy.com/media/hr9MhRBXq0W9erfibl/giphy.gif"}/></div>
+              <div style={{marginTop: '25px'}}/>
               <div style={{backgroundColor: 'rgba(45, 63, 104, 0.25)', padding: '5px 10px 0px 10px', borderRadius: '5px'}}>
               <h5 style={{fontWeight: 400, marginTop: '10px'}}>Cross-platform mobile app with camera & AR integrations</h5>
               <h5 style={{fontWeight: 400 }}>Tech Stack: React Native, ViroReact, Redux, Node.js, Express, PostgreSQL, AWS</h5>
@@ -100,6 +119,7 @@ class Main extends React.Component {
           <div style={{border: '1px solid #3d84b8', padding: '15px'}}>
             <h3 style={{textAlign: 'left'}}>Fortress Panic</h3>
               <div style={{textAlign: 'left', marginBottom: '5px'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/image3.png"}/></div>
+              <div style={{marginTop: '25px'}}/>
               <div style={{backgroundColor: 'rgba(45, 63, 104, 0.25)', padding: '5px 10px 0px 10px', borderRadius: '5px'}}>
               <h5 style={{fontWeight: 400,  marginTop: '10px'}}>Multiplayer tower-defense game based on popular board game Castle Panic!</h5>
               <h5 style={{fontWeight: 400 }}>Tech Stack: React, Redux, Scss, Node.js, Express, Socket.io, MongoDB, Firebase, AWS</h5>
@@ -113,6 +133,7 @@ class Main extends React.Component {
             <div style={{border: '1px solid #3d84b8', padding: '15px'}}>
             <h3 style={{textAlign: 'left'}}>A Way Home</h3>
               <div style={{textAlign: 'left', marginBottom: '5px'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/fec1.png"}/></div>
+              <div style={{marginTop: '25px'}}/>
               <div style={{backgroundColor: 'rgba(45, 63, 104, 0.25)', padding: '5px 10px 0px 10px', borderRadius: '5px'}}>
               <h5 style={{fontWeight: 400, marginTop: '10px'}}>Recreates VRBO's search and bookings microservice in UI design and functionality</h5>
               <h5 style={{fontWeight: 400 }}>Tech Stack: React, Redux, Sass, Node.js, Express, MySQL, Sequelize, Heroku, AWS</h5>
@@ -124,8 +145,9 @@ class Main extends React.Component {
             </div>
 
             <div style={{border: '1px solid #3d84b8', padding: '15px'}}>
-            <h3 style={{textAlign: 'left'}}>Distributed Systems Design</h3>
+            <h3 style={{textAlign: 'left'}}>Systems Design Capstone</h3>
               <div style={{textAlign: 'left', marginBottom: '5px'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/sdc.png"}/></div>
+              <div style={{marginTop: '25px'}}/>
               <div style={{backgroundColor: 'rgba(45, 63, 104, 0.25)', padding: '5px 10px 0px 10px', borderRadius: '5px'}}>
               <h5 style={{fontWeight: 400, marginTop: '10px'}}>Back-end optimization of IKEA products microservice for horizontal scaling</h5>
               <h5 style={{fontWeight: 400 }}>Tech Stack: Node.js, Express, PostgreSQL, Redis, AWS, NginX, Next.js</h5>
@@ -134,6 +156,7 @@ class Main extends React.Component {
               </div>
               </div>
             </div>
+            </Slider>
           {close}
         </article>
 
