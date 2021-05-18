@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import profilepic from '../images/profilepic.jpg';
-import Slider from "react-slick";
 
 class Main extends React.Component {
   constructor(props) {
@@ -23,31 +22,6 @@ class Main extends React.Component {
       ></div>
     )
 
-    const config = {
-      "0": "https://media.giphy.com/media/hr9MhRBXq0W9erfibl/giphy.gif",
-      "1": "https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/image3.png",
-      "2": "https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/fec1.png",
-      "3": "https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/sdc.png",
-    }
-
-    const settings = {
-      customPaging: function(i) {
-        return (
-          <div style={{display: 'inline-block'}}>
-          <a>
-            <img width="200" height="150" src={`${config[i]}`} />
-          </a>
-          </div>
-        );
-      },
-      dots: true,
-      dotsClass: "slick-dots slick-thumb",
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-
     return (
       <div
         ref={this.props.setWrapperRef}
@@ -66,24 +40,17 @@ class Main extends React.Component {
             <img style={{margin: '0 auto', width: '22.5%', borderRadius: '50%', border: '2.5px solid #64ffda'}} src={profilepic} alt="" />
           </div>
           <div style={{verticalAlign: 'top'}}>
-            <h3 style={{textAlign: 'center'}}>What I would like to do</h3>
+            <h3 style={{textAlign: 'left'}}>A Problem-solving Full Stack Developer</h3>
             <p>
-            My goal as a developer is to contribute to high-quality applications that provide productivity + simplicity and compound the scale of its benefits over time.
+            Hi there! I'm Austin Liu, a software engineer currently working in Los Angeles, CA. 
+            My purpose as a developer is to build software that provides productivity and simplicity and compound the value benefits over time.
+            <br/><br/>
+            I enjoy the process of developing full stack solutions to web products throughout the whole development lifecycle, from creating engaging user interfaces to scaling robust backends. 
+            I enjoy the community and the challenges that the field brings as well as the opportunity to solve problems. I look forward to challenging myself on a daily basis and am excited to work alongside brilliant team members.
+            <br/><br/>
+            Thanks for visiting!
             </p>
           </div>
-          <div style={{verticalAlign: 'top'}}>
-            <h3 style={{textAlign: 'center'}}>What I am currently doing</h3>
-            <p>I'm a software engineer currently working in Los Angeles, CA, focused on building web development. In my free time, I leverage my tech skills to build new systems and tools.
-            </p>
-          </div>
-          <div style={{verticalAlign: 'top'}}>
-          <h3 style={{textAlign: 'center'}}>Interests when I'm not coding for work or fun</h3>
-          <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
-            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: '#64ffda'}} className="icon fa-microchip fa-2x"></div>IOT/ Automation</p>
-            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: '#64ffda'}} className="icon fa-map-signs fa-2x"></div>Hiking/ Outdoors</p>
-            <p style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 7.5px', fontSize: '0.9em'}}><div style={{textAlign: 'center', color: '#64ffda'}} className="icon fa-plane fa-2x"></div>Travel/ Exploration</p>
-          </div>
-            </div>
           {close}
         </article>
 
