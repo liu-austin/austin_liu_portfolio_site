@@ -42,8 +42,8 @@ class Main extends React.Component {
           <div style={{verticalAlign: 'top'}}>
             <h3 style={{textTransform: 'none', textAlign: 'left'}}>Mission-driven full stack developer with a passion for building high-quality software</h3>
             <p>
-            Hi there! I'm Austin Liu, a software engineer currently working in Los Angeles, CA. 
-            My goal as a developer is to build software that provides productivity and simplicity and compound the value benefits over time.
+            Welcome! I'm Austin Liu, a software engineer currently working in Los Angeles, CA. 
+            My goal as a developer is to build software that provides productivity + simplicity and compound the benefits scaling over time.
             <br/><br/>
             I enjoy the process of developing full stack solutions to web products throughout the whole development lifecycle, from creating engaging user interfaces to scaling robust backends. 
             I enjoy the community and the challenges that the field brings as well as the opportunity to solve problems. I look forward to challenging myself on a daily basis and am excited to work alongside brilliant team members.
