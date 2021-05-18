@@ -31,13 +31,22 @@ class Main extends React.Component {
     }
 
     const settings = {
-      // dots: true,
-      // infinite: true,
+      customPaging: function(i) {
+        return (
+          <div style={{display: 'inline-block'}}>
+          <a>
+            <img width="200" height="150" src={`${config[i]}`} />
+          </a>
+          </div>
+        );
+      },
+      dots: true,
+      dotsClass: "slick-dots slick-thumb",
+      infinite: true,
+      speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1,
-      vertical: true,
-      verticalSwiping: true,
-    };
+      slidesToScroll: 1
+    }
 
     return (
       <div
@@ -54,7 +63,7 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <div className="image main" style={{backgroundImage: 'url("https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/tokyo.jpg")'}}>
-            <img style={{margin: '0 auto', width: '22.5%', borderRadius: '50%', border: '2.5px solid #64ffda'}} src={profilepic} alt="profilepic" />
+            <img style={{margin: '0 auto', width: '22.5%', borderRadius: '50%', border: '2.5px solid #64ffda'}} src={profilepic} alt="" />
           </div>
           <div style={{verticalAlign: 'top'}}>
             <h3 style={{textAlign: 'center'}}>What I would like to do</h3>
@@ -98,7 +107,6 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Projects</h2>
-          <Slider {...settings}>
           <div style={{border: '1px solid #3d84b8', padding: '15px'}}>
             <h3 style={{textAlign: 'left'}}>TourViewAR</h3>
               <div style={{textAlign: 'left', marginBottom: '5px'}}><img style={{width: '100%'}} src={"https://media.giphy.com/media/hr9MhRBXq0W9erfibl/giphy.gif"}/></div>
@@ -156,7 +164,6 @@ class Main extends React.Component {
               </div>
               </div>
             </div>
-            </Slider>
           {close}
         </article>
 
