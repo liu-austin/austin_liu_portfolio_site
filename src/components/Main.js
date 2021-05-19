@@ -82,7 +82,7 @@ class Main extends React.Component {
               <div style={{textAlign: 'left', marginBottom: '5px'}}><img style={{width: '100%'}} src={"https://media.giphy.com/media/hr9MhRBXq0W9erfibl/giphy.gif"}/></div>
               <div style={{marginTop: '25px'}}/>
               <div style={{backgroundColor: 'rgba(45, 63, 104, 0.25)', padding: '5px 10px 0px 10px', borderRadius: '5px'}}>
-              <h5 style={{fontWeight: 400, marginTop: '10px'}}>Cross-platform mobile app with camera & AR integrations</h5>
+              <h5 style={{fontWeight: 400, marginTop: '10px'}}>Cross-platform mobile app with AR & camera integration</h5>
               <h5 style={{fontWeight: 400 }}>Tech Stack: React Native, ViroReact, Redux, Node.js, Express, PostgreSQL, AWS</h5>
               <div style={{display: 'flex', justifyContent: 'space-evenly', color: '#a8b2d1' }}>
 
