@@ -40,7 +40,7 @@ class Main extends React.Component {
             <img style={{margin: '0 auto', width: '22.5%', borderRadius: '50%', border: '2.5px solid #64ffda'}} src={profilepic} alt="" />
           </div>
           <div style={{verticalAlign: 'top'}}>
-            <h3 style={{textTransform: 'none', textAlign: 'left'}}>Mission-driven full stack developer with a passion for building high-quality software</h3>
+            <h3 style={{textTransform: 'none', textAlign: 'left'}}>Product-driven full stack developer with a passion for building high-quality software</h3>
             <div style={{backgroundColor: 'rgba(45, 63, 104, 0.25)', padding: '30px 17.5px 0px 17.5px', borderRadius: '5px'}}>
             <p>
             Welcome! I'm Austin Liu, a software engineer currently working in Los Angeles, CA. 
