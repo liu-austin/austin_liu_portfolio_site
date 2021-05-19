@@ -99,7 +99,7 @@ class Main extends React.Component {
               <div style={{textAlign: 'left', marginBottom: '5px'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/image3.png"}/></div>
               <div style={{marginTop: '25px'}}/>
               <div style={{backgroundColor: 'rgba(45, 63, 104, 0.25)', padding: '5px 10px 0px 10px', borderRadius: '5px'}}>
-              <h5 style={{fontWeight: 400,  marginTop: '10px'}}>Multiplayer tower-defense game based on popular board game Castle Panic!</h5>
+              <h5 style={{fontWeight: 400,  marginTop: '10px'}}>Online multiplayer tower-defense game based on popular board game Castle Panic!</h5>
               <h5 style={{fontWeight: 400 }}>Tech Stack: React, Redux, Scss, Node.js, Express, Socket.io, MongoDB, Firebase, AWS</h5>
               <div style={{display: 'flex', justifyContent: 'space-evenly', color: '#a8b2d1' }}>
                 <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="http://d3ths4xs9zlotl.cloudfront.net/" className="download icon fa-link fa-2x"></a><div style={{display: 'block'}}>Live</div></h5>
@@ -113,7 +113,7 @@ class Main extends React.Component {
               <div style={{textAlign: 'left', marginBottom: '5px'}}><img style={{width: '100%'}} src={"https://arobjectimages.s3-us-west-1.amazonaws.com/portfolio/fec1.png"}/></div>
               <div style={{marginTop: '25px'}}/>
               <div style={{backgroundColor: 'rgba(45, 63, 104, 0.25)', padding: '5px 10px 0px 10px', borderRadius: '5px'}}>
-              <h5 style={{fontWeight: 400, marginTop: '10px'}}>Recreates VRBO's search and bookings microservice in UI design and functionality</h5>
+              <h5 style={{fontWeight: 400, marginTop: '10px'}}>Recreates VRBO's search and bookings microservices in UI design and functionality</h5>
               <h5 style={{fontWeight: 400 }}>Tech Stack: React, Redux, Sass, Node.js, Express, MySQL, Sequelize, Heroku, AWS</h5>
               <div style={{display: 'flex', justifyContent: 'space-evenly', color: '#a8b2d1' }}>
                 <h5 style={{fontWeight: '400', display: 'inline-block', textAlign: 'center', padding: '0px 0px'}}><a style={{textAlign: 'center'}} href="https://awayhome-al-proxy-fec.herokuapp.com/" className="download icon fa-link fa-2x"></a><div style={{display: 'block'}}>Live</div></h5>
