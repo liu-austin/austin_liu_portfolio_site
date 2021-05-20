@@ -21,7 +21,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "austin-liu-portfolio",
+        bucketName: "austin-liu.com",
       },
   },
     'gatsby-plugin-sass',
