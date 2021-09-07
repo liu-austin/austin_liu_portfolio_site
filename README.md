@@ -2,7 +2,7 @@
 
 This is the source code for my portfolio website.
 
-The live site is hosted [here](austinliu.co)!
+The live site is hosted [here](austin-liu.com)!
 
 Built with:
 
